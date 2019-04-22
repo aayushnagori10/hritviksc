@@ -4,9 +4,9 @@ echo " Welcome to dns configration script"
 
 yum install bind* -y
 
-wget https://github.com/hritvik12/hritviksc/blob/master/named.conf -P /etc/
+wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/hritvik12/hritviksc/master/named.conf -p /etc/
 
-wget https://github.com/hritvik12/hritviksc/blob/master/forward1 -P /var/named/
+wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/hritvik12/hritviksc/master/forward1 -P /var/named/
 
 chgrp named	/var/named/forward1
 
